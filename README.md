@@ -1,7 +1,7 @@
 # Compiler
 2021-1 Compiler Term Project
 
-[PROJECT] Changes on the lexical specification for "single character"
+## [PROJECT] Changes on the lexical specification for "single character"
 
 Hello, students.
 
