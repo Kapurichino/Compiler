@@ -1,1 +1,1 @@
-<STR, true false>No character end symbol ' in 1 line. <ID, tue><BOOL, false>No character end symbol ' in 2 line. <LBRACE><LPAREN><ID, a><ASSIGN, =><INT, 1><SEMI><RPARAN><RBRACE><RBRACKET><BOOL, true><BOOL, false>
+<INT, 0><INT, 0><INT, 1><INT, 0><INT, 0><INT, 10><INT, 0><INT, 0><INT, 10><ID, a0010><INT, 0><INT, 0><INT, 10><ARITH, -><INT, 10><INT, 0><INT, 0><INT, 10><ARITH, -><INT, -10>
