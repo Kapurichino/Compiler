@@ -47,7 +47,7 @@ int error(int num) {
         break;
     }
     fputs("in ", outfile);
-    fputs(linenum, outfile);
+    fprintf(outfile, "%d ", linenum);
     fputs("line. ", outfile);
     return num;
 }
@@ -358,7 +358,7 @@ int findToken(){
                 lastToken = COMP;    // ==
                 copy[1] = last;
                 fputs("<",outfile);
-                fputs("COMP",outfile);
+                fputs("COMP, ",outfile);
                 fputs(copy,outfile);
                 fputs(">",outfile);
                 last = lexer();
@@ -377,7 +377,7 @@ int findToken(){
                 lastToken = COMP;
                 copy[1] = last;
                 fputs("<",outfile);
-                fputs("COMP",outfile);
+                fputs("COMP, ",outfile);
                 fputs(copy,outfile);
                 fputs(">",outfile);
                 last = lexer();
