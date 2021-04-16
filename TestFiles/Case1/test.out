@@ -1,0 +1,1 @@
+<VTYPE, int><ID, main><LPAREN><RPARAN><LBRACE><VTYPE, char><ID, if123><ASSIGN><CHAR, 1><SEMI><VTYPE, int><INT, 0><ID, a><ASSIGN><ID, a><ARITH, +><INT, -1><SEMI><KEYWORD, return><ARITH, -><INT, 0><SEMI><RBRACE>
