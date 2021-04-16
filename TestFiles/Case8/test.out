@@ -1,0 +1,1 @@
+<ID, id><CHAR, a><BOOL, true><STR, compiler><INT, 10><ARITH, -><INT, 10><INT, 10><ARITH, -><INT, -10><KEYWORD, if><KEYWORD, else><KEYWORD, while><KEYWORD, class><KEYWORD, return><ARITH, +><INT, -><ARITH, *><ARITH, /><ASSIGN, =><COMP, <><COMP, >><COMP, ==><COMP, !=><COMP, <=><COMP, >=><SEMI><LBRACE><RBRACE><LPAREN><RPARAN><LBRACKET><RBRACKET><SEPARATE>
