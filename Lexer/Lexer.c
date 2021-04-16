@@ -21,6 +21,8 @@ enum Token { VTYPE=1, INT, CHAR, STR, BOOL, ID, VALUE, COMP, ARITH, ASSIGN, KEYW
 int lastToken = 0;
 char last = ' ';
 
+unsigned int linenum;
+
 // lexer (read one character)
 char lexer() {
     char lex = fgetc(infile);
@@ -30,7 +32,6 @@ char lexer() {
 }
 
 // kind of error with comment
-unsigned int linenum;
 int error(int num) {
     switch (num) {
         // no end ' with start '
@@ -248,7 +249,7 @@ int findToken(){
     // signed integer or operation
     else if (last == '-') {
         // if last = value, id, ), 0 => operation
-        if ((lastToken == VALUE || lastToken == ID) || lastToken == RPARAN){
+        if ((lastToken == INT || lastToken == ID) || lastToken == RPARAN){
             lastToken = ARITH;    
             fputs("<",outfile);
             fputs("ARITH, ",outfile);
