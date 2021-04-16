@@ -107,7 +107,7 @@ int isInteger() {
 int isString() {
     char copy[100] = { last };
     last = lexer();
-    for (int i = 1; last != '\"' && i < 100; i++) {
+    for (int i = 0; last != '\"' && i < 100; i++) {
         copy[i] = last;
         if (feof(infile))
             return 0;
@@ -331,10 +331,10 @@ int findToken(){
             copy[0] = last;
             lastToken = COMP;
              if((last = lexer()) != '='){  // < >
-                  fputs("<",outfile);
-                  fputs("COMP, ",outfile);
-                  fputc(last,outfile);
-                  fputs(">",outfile);
+                 fputs("<", outfile);
+                 fputs("COMP, ", outfile);
+                 fputs(copy, outfile);
+                 fputs(">", outfile);
              }
              else{
                  copy[1] = last;    // <= >=
@@ -349,9 +349,10 @@ int findToken(){
             copy[0] = last;
             if ((last = lexer()) != '='){   // =
                 lastToken = ASSIGN;
-                fputs("<",outfile);
-                fputs("ASSIGN",outfile);
-                fputs(">",outfile);
+                fputs("<", outfile);
+                fputs("ASSIGN, ", outfile);
+                fputs(copy, outfile);
+                fputs(">", outfile);
             }
             else {
                 lastToken = COMP;    // ==
